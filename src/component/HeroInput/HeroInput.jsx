@@ -1,6 +1,7 @@
 import css from './HeroInput.module.css';
 import React, { useRef } from 'react';
 import apiClient from '../../api/settings';
+import { Notify } from 'notiflix/build/notiflix-notify-aio';
 
 function HeroInput() {
   const nickname = useRef(null);
@@ -18,6 +19,7 @@ function HeroInput() {
       catch_phrase: catch_phrase.current.value,
     };
     await apiClient.post('', postHero);
+    Notify.success(`Hero ${postHero.nickname} successfully added`);
   }
 
   return (

@@ -1,8 +1,8 @@
 import React, { useRef } from 'react';
-// import PropTypes from "prop-types";
 import css from './Modal.module.css';
 import apiClient from '../../api/settings.js';
 import { createPortal } from 'react-dom';
+import { Notify } from 'notiflix/build/notiflix-notify-aio';
 const modalRootRef = document.querySelector('#root');
 
 function Modal({ handleBackdropClick, toggle, closeModal, id }) {
@@ -21,10 +21,14 @@ function Modal({ handleBackdropClick, toggle, closeModal, id }) {
       catch_phrase: catch_phrase.current.value,
     };
     await apiClient.put(`/${id}`, putHero, closeModal());
+
+    Notify.success(`Hero ${putHero.nickname} successfully changed`);
   }
 
   async function deleteHero() {
     await apiClient.delete(`/${id}`, closeModal());
+
+    Notify.success(`Hero successfully removed`);
   }
 
   return createPortal(
@@ -107,7 +111,5 @@ function Modal({ handleBackdropClick, toggle, closeModal, id }) {
     modalRootRef,
   );
 }
-
-Modal.propTypes = {};
 
 export default Modal;

@@ -13,7 +13,6 @@ function HerosList() {
   const [error, setError] = useState(null);
   const [isLoaded, setIsLoaded] = useState(false);
   const [heros, setHeros] = useState([]);
-
   const fortmatResponse = res => {
     return JSON.parse(JSON.stringify(res.data));
   };
@@ -30,8 +29,7 @@ function HerosList() {
           setError(error);
         },
       );
-  }, []);
-
+  }, [heros]);
   function editHero() {
     toggle();
   }

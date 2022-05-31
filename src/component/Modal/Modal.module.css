@@ -1,36 +1,22 @@
 :root {
-    --main-bg-color: #F2F5FC;
-    --white-color: #FFFFFF;
-    --black-text-color: #000000;
-    --main-text-color: #dadadac5;
-    --main-bg-input: #eceff893;
-    --placeholder-text-color: #C7CCDC;
-    --balance-text-color: #52555fb3;
-    --accent-orange-color: #FF751D;
-    --lite-orange-color: #FFDAC0;
-    --dark-icons-color: #071F41;
-    --light-icons-color: #F5F6FB;
-    --red-text-color: #E7192E;
-    --red-text-color-auth: #EB5757;
-    --green-text-color: #407946;
-    --kapusta-color: #DFE2EB;
-    --modal-balance-gradient: linear-gradient(117.84deg, #1D346A 2.84%, #031634 67.28%);
-    --main-shadow: 0px 10px 60px rgba(170, 178, 197, 0.2);
-    --notification-shadow: 10px 10px 30px rgba(82, 85, 95, 0.4);
-    --vertical-line-header: #E0E5EB;
-  
-  }
-  
+  --main-bg-color: #f2f5fc;
+  --white-color: #ffffff;
+  --black-text-color: #000000;
+  --main-text-color: #dadadac5;
+  --main-bg-input: #eceff893;
+  --red-text-color: #e7192e;
+  --red-text-color-auth: #eb5757;
+  --main-shadow: 0px 10px 60px #aaaaaa;
+}
+
 .backdrop {
   position: fixed;
   top: 0;
   left: 0;
   width: 100vw;
   height: 100vh;
-  z-index: 101; 
+  z-index: 101;
   backdrop-filter: blur(5px);
-  
-
 }
 
 .modal_content {
@@ -41,7 +27,7 @@
   box-shadow: 10px 10px 30px rgba(82, 85, 95, 0.4);
   border-radius: 30px;
   background-color: rgb(43, 39, 39);
-  z-index: 102; 
+  z-index: 102;
 }
 
 .modalCloseBtn {
@@ -51,14 +37,14 @@
   width: 30px;
   height: 30px;
   border-radius: 50%;
-  border: 2px solid #ffffff;
+  border: 2px solid var(--white-color);
   cursor: pointer;
   background-color: inherit;
   outline: none;
   margin: 2px;
   background-color: var(--main-text-color);
   color: var(--black-text-color);
-  font-size:larger;
+  font-size: larger;
 }
 .modalCloseBtn:hover {
   border: 2px solid var(--red-text-color);
@@ -91,7 +77,7 @@
   display: flex;
   margin-top: 10px;
   width: 100%;
-  justify-content:space-around;
+  justify-content: space-around;
 }
 
 .btn {
@@ -112,84 +98,77 @@
   font-weight: 700;
   transition: background-color 300ms linear;
   color: var(--black-text-color);
-  
 }
 .btn:hover,
 .btn:focus {
-    background-color:var(--red-text-color);
-    border: 0;
-    color: var(--white-color);
-  }
-  ::placeholder {
-    color: var(--white-color);
-  }
-  .form__control {
-    background-color: var(--main-bg-input);
-    resize: vertical;
-    margin-top: 5px;
-    width: 100%;
-  }
-  .form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 50px 0 20px 0;
-    z-index: 103; 
-  }
-  
-  .form__wrapper {
-    padding: 20px 60px;
-    display: flex;
-    flex-direction: column;
-    width: 450px;
-    margin: 0 auto;
-    align-items: center;
-    z-index: 104; 
-  }
-  
-  .form__title {
+  background-color: var(--red-text-color);
+  border: 0;
+  color: var(--white-color);
+}
+::placeholder {
+  color: var(--white-color);
+}
+.form__control {
+  background-color: var(--main-bg-input);
+  resize: vertical;
+  margin-top: 5px;
+  width: 100%;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 0 20px 0;
+  z-index: 103;
+}
+
+.form__wrapper {
+  padding: 20px 60px;
+  display: flex;
+  flex-direction: column;
+  width: 450px;
+  margin: 0 auto;
+  align-items: center;
+  z-index: 104;
+}
+
+.form__title {
   color: var(--main-text-color);
   font-size: 30px;
-  }
-  
-  .form__group{
+}
+
+.form__group {
   height: 30px;
-  }
-  
-  
-  
-  .form__control__textarea {
-    background-color: var(--main-bg-input);
-    width: 100%;
-    resize: none;
-    height: 40px;
-    margin-top: 5px;
-  }
-  
-  .label {
-    font-size: 20px;
-    display: flex;
-    width: 100%;
-    align-items: center;
-    flex-direction: column;
-    margin-bottom: 10px;
-    color: var(--main-text-color);
-  
-  }
-  
-  
-  .form__control {
-    padding: 10px;
-    font-size: 15px;
-    border: 2px solid var(--main-text-color);
-    width: 100%;
-    border-radius: 10px;
-    appearance: none;
-    outline: none;
-  }
-  
-  .form__control:hover {
-    box-shadow: 2px 2px 5px #aaaaaa;
-  }
-  
-  
+}
+
+.form__control__textarea {
+  background-color: var(--main-bg-input);
+  width: 100%;
+  resize: none;
+  height: 40px;
+  margin-top: 5px;
+}
+
+.label {
+  font-size: 20px;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 10px;
+  color: var(--main-text-color);
+}
+
+.form__control {
+  padding: 10px;
+  font-size: 15px;
+  border: 2px solid var(--main-text-color);
+  width: 100%;
+  border-radius: 10px;
+  appearance: none;
+  outline: none;
+}
+
+.form__control:hover {
+  box-shadow: 2px 2px 5px var(--main-shadow);
+}

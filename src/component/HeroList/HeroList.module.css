@@ -6,7 +6,7 @@
   border-radius: 10px;
   justify-content: center;
   align-items: center;
-padding-top: 60px;
+  padding-top: 60px;
 }
 
 .heroList__div {
@@ -28,18 +28,17 @@ padding-top: 60px;
 }
 
 .heroList__title {
-color: var(--main-text-color);
- margin-bottom: 30px;
- position:fixed;
- top: 94px;
- left: 43%;
- height: 30px;
- align-items: center;
- justify-content: center;
-
+  color: var(--main-text-color);
+  margin-bottom: 30px;
+  position: fixed;
+  top: 94px;
+  left: 43%;
+  height: 30px;
+  align-items: center;
+  justify-content: center;
 }
 
-.heroList__list{
+.heroList__list {
   padding: 20px;
 }
 
@@ -54,11 +53,9 @@ color: var(--main-text-color);
   padding: 1em;
   background-color: rgba(95, 92, 92, 0.651);
   border-radius: 10px;
-  box-shadow:
-   0 1px 4px rgba(0, 0, 0, .3),
-   -23px 0 20px -23px rgba(0, 0, 0, .8),
-   23px 0 20px -23px rgba(0, 0, 0, .8),
-   0 0 40px rgba(0, 0, 0, .1) inset;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3),
+    -23px 0 20px -23px rgba(0, 0, 0, 0.8), 23px 0 20px -23px rgba(0, 0, 0, 0.8),
+    0 0 40px rgba(0, 0, 0, 0.1) inset;
 }
 
 .heroList__wrapper {
@@ -73,22 +70,20 @@ color: var(--main-text-color);
 .heroList__description {
   display: block;
 }
-.heroList__nick{
+.heroList__nick {
   margin-bottom: 13px;
-  
 }
-.heroList__name{
+.heroList__name {
   margin-bottom: 7px;
 }
 
-.heroList__description{
+.heroList__description {
   margin-bottom: 7px;
 }
 
-.heroList__superpowers{
+.heroList__superpowers {
   margin-bottom: 7px;
 }
-
 
 .heroList__btn {
   position: absolute;
@@ -111,11 +106,10 @@ color: var(--main-text-color);
   font-weight: 700;
   transition: background-color 300ms linear;
   color: var(--black-text-color);
-  
 }
 .heroList__btn:hover,
 .heroList__btn:focus {
-    background-color:var(--red-text-color);
-    border: 0;
-    color: var(--white-color);
-  }
+  background-color: var(--red-text-color);
+  border: 0;
+  color: var(--white-color);
+}

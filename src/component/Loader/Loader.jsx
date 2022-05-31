@@ -1,13 +1,13 @@
-import { Oval } from  'react-loader-spinner'
+import { Oval } from 'react-loader-spinner';
 import css from './Loader.module.css';
 
-function Loader () {
+function Loader() {
   return (
-  <>
-  <div className={css.spinner}>
-<Oval/>
-  </div>
-  </>
+    <>
+      <div className={css.spinner}>
+        <Oval />
+      </div>
+    </>
   );
 }
 export default Loader;

@@ -7,7 +7,7 @@
   box-shadow: 10px 10px 30px rgba(82, 85, 95, 0.4);
   border-radius: 30px;
   background-color: rgba(43, 39, 39, 0.9);
-  z-index: 102; 
+  z-index: 102;
 }
 
 .btn {
@@ -29,77 +29,73 @@
   font-weight: 700;
   transition: background-color 300ms linear;
   color: var(--black-text-color);
-  
 }
 .btn:hover,
 .btn:focus {
-    background-color:var(--red-text-color);
-    border: 0;
-    color: var(--white-color);
-  }
-  ::placeholder {
-    color: var(--white-color);
-  }
-  .form__control {
-    background-color: var(--main-bg-input);
-    resize: vertical;
-    margin-top: 5px;
-    width: 100%;
-  }
-  .form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 30px 0 10px 0;
-    z-index: 103; 
-  }
-  
-  .form__wrapper {
-    padding: 20px 60px;
-    display: flex;
-    flex-direction: column;
-    width: 450px;
-    margin: 0 auto;
-    align-items: center;
-    z-index: 104; 
-  }
-  
-  .form__title {
+  background-color: var(--red-text-color);
+  border: 0;
+  color: var(--white-color);
+}
+::placeholder {
+  color: var(--white-color);
+}
+.form__control {
+  background-color: var(--main-bg-input);
+  resize: vertical;
+  margin-top: 5px;
+  width: 100%;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 0 10px 0;
+  z-index: 103;
+}
+
+.form__wrapper {
+  padding: 20px 60px;
+  display: flex;
+  flex-direction: column;
+  width: 450px;
+  margin: 0 auto;
+  align-items: center;
+  z-index: 104;
+}
+
+.form__title {
   color: var(--main-text-color);
   font-size: 30px;
-  }
-  
-  .form__control__textarea {
-    background-color: var(--main-bg-input);
-    width: 100%;
-    resize: none;
-    height: 40px;
-    margin-top: 5px;
-  }
-  
-  .label {
-    font-size: 20px;
-    display: flex;
-    width: 100%;
-    align-items: center;
-    flex-direction: column;
-    margin-bottom: 5px;
-    color: var(--main-text-color);
-  
-  }
-  
-  
-  .form__control {
-    padding: 10px;
-    font-size: 15px;
-    border: 2px solid var(--main-text-color);
-    width: 100%;
-    border-radius: 10px;
-    appearance: none;
-    outline: none;
-  }
-  
-  .form__control:hover {
-    box-shadow: 2px 2px 5px #aaaaaa;
-  }
-  
+}
+
+.form__control__textarea {
+  background-color: var(--main-bg-input);
+  width: 100%;
+  resize: none;
+  height: 40px;
+  margin-top: 5px;
+}
+
+.label {
+  font-size: 20px;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 5px;
+  color: var(--main-text-color);
+}
+
+.form__control {
+  padding: 10px;
+  font-size: 15px;
+  border: 2px solid var(--main-text-color);
+  width: 100%;
+  border-radius: 10px;
+  appearance: none;
+  outline: none;
+}
+
+.form__control:hover {
+  box-shadow: 2px 2px 5px #aaaaaa;
+}

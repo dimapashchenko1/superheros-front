@@ -1,0 +1,121 @@
+.heroList__container {
+  position: relative;
+  background-color: rgba(41, 41, 41, 0.877);
+  padding-bottom: 20px;
+  width: 700px;
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+padding-top: 60px;
+}
+
+.heroList__div {
+  overflow-y: scroll;
+  height: 75vh;
+}
+
+.heroList__div::-webkit-scrollbar {
+  width: 6px;
+  height: 80px;
+  overflow-y: scroll;
+  background: var(--light-icons-color);
+}
+
+.heroList__div::-webkit-scrollbar-thumb {
+  background-color: var(--red-text-color);
+  border-radius: 4px;
+  height: 30px;
+}
+
+.heroList__title {
+color: var(--main-text-color);
+ margin-bottom: 30px;
+ position:fixed;
+ top: 94px;
+ left: 43%;
+ height: 30px;
+ align-items: center;
+ justify-content: center;
+
+}
+
+.heroList__list{
+  padding: 20px;
+}
+
+.heroList__item {
+  height: 200px;
+  position: relative;
+  display: flex;
+  justify-items: baseline;
+  padding: 10px;
+  margin-bottom: 15px;
+  margin: 10px auto;
+  padding: 1em;
+  background-color: rgba(95, 92, 92, 0.651);
+  border-radius: 10px;
+  box-shadow:
+   0 1px 4px rgba(0, 0, 0, .3),
+   -23px 0 20px -23px rgba(0, 0, 0, .8),
+   23px 0 20px -23px rgba(0, 0, 0, .8),
+   0 0 40px rgba(0, 0, 0, .1) inset;
+}
+
+.heroList__wrapper {
+  margin-left: 30px;
+  /* width: 100%; */
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.heroList__description {
+  display: block;
+}
+.heroList__nick{
+  margin-bottom: 13px;
+  
+}
+.heroList__name{
+  margin-bottom: 7px;
+}
+
+.heroList__description{
+  margin-bottom: 7px;
+}
+
+.heroList__superpowers{
+  margin-bottom: 7px;
+}
+
+
+.heroList__btn {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  width: 125px;
+  height: 28px;
+  border-radius: 16px;
+  background-color: var(--main-text-color);
+  text-align: center;
+  display: inline-block;
+  border: 1px solid var(--red-text-color);
+  text-decoration: none;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 12px;
+  line-height: 14px;
+  font-style: normal;
+  font-weight: 700;
+  transition: background-color 300ms linear;
+  color: var(--black-text-color);
+  
+}
+.heroList__btn:hover,
+.heroList__btn:focus {
+    background-color:var(--red-text-color);
+    border: 0;
+    color: var(--white-color);
+  }
